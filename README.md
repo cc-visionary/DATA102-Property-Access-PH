@@ -30,5 +30,11 @@
 ## Instructions
 User must access the Jupyter notebooks in this sequence:
 1. Scraping and Data Cleaning.ipynb
+    - Output files: property_urls.csv / unclean_data.json / cleaned_data.json
+      - The website is structured with multiple pages with each page having approximately 20 property listings. In our data collection process we collected the url of each property across the website, and stored the urls in property_urls.csv.
+       - The data obtained from scraping are property details (name, address, price, author), utility information (bedroom, showers, furnish, parking, lot area), features, and the timestamp that notes what date and time the information was collected. After scraping all urls, the data obtained is stored in unclean_data.json. 
+      - After the data cleaning was done on the data stored in unclean_data.json, the cleaned data was exported to cleaned_data.json to be used for analysis in the succeding notebooks
 2. EDA.ipynb
+    - Input file: cleaned_data.json
 3. Research Question and Clustering.ipynb
+    - Input file: cleaned_data.json
